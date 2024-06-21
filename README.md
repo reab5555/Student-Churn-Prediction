@@ -71,8 +71,8 @@ The SelectKBest method from the sklearn.feature_selection module is a feature se
 
 Selected As top 10 Features: 
 - Gender
-- Scholarship holder'
-- Age at enrollment'
+- Scholarship holder
+- Age at enrollment
 - Curricular units 1st sem (enrolled)
 - Curricular units 1st sem (approved)
 - Curricular units 1st sem (grade)
