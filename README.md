@@ -80,7 +80,11 @@ Selected As top 10 Features:
 - Curricular units 2nd sem (approved)
 - Curricular units 2nd sem (grade)
 - Course_12
-       
+
+We can also view this as a correlation matrix and see the top 5 features:   
+
+<img src="images/heatmap.png" width="400" alt="alt text">
+
 ## Model Training and Evaluation
 We used various machine learning models and conducted a grid search to find the best hyperparameters. Stratified cross-validation with 8 folds and downsampling for preprocessing were utilized to ensure balanced class distribution.
 
@@ -91,26 +95,24 @@ We also experimented with simpler models such as Logistic Regression, K-Nearest 
 ### Neural Network (NN) (All Features)
 | Class        | Precision | Recall | F1-Score | Support |
 |--------------|-----------|--------|----------|---------|
-| Dropout      | 0.929     | 0.843  | 0.884    | 1421    |
-| Graduate     | 0.856     | 0.935  | 0.894    | 1421    |
+| Dropout      | 0.923     | 0.853  | 0.887    | 1421    |
+| Graduate     | 0.863     | 0.928  | 0.895    | 1421    |
 
 ### Best Configuration
-- **Layers**: [8, 8, 8]
-- **Learning Rate**: 0.01
+- **Layers**: [16, 32, 64]
+- **Learning Rate**: 0.001
 - **Batch Size**: 128
-- **F1 Score**: 0.8942
+- **F1 Score**: 0.8951
 
 ### Comparison of F1 Scores
 | Complexity | Model                   | Parameters (All Features) | Parameters (Top 10 Features) | F1 Score (All Features) | F1 Score (Top 10 Features) |
 |------------|-------------------------|---------------------------|------------------------------|-------------------------|----------------------------|
-| 1          | Logistic Regression     | C = 0.5                   | C = 0.1                      | 0.8943                  | 0.8930                     |
-| 2          | K-Nearest Neighbors     | k = 25                    | k = 25                       | 0.8650                  | 0.8804                     |
-| 3          | Support Vector Machine  | C = 0.1 (Linear)          | C = 0.1 (Linear)             | 0.8959                  | 0.8943                     |
-| 4          | Random Forest           | Estimators = 500          | Estimators = 250             | 0.8819                  | 0.8768                     |
-| 5          | Gradient Boosting       | Estimators = 100          | Estimators = 100             | 0.8906                  | 0.8872                     |
-| 6          | Neural Network          | Layers = [8, 8, 8]        |                              |                         | 0.8942                     |
-
-Overall, it seems that the classification task is not too complex, as smaller and less complex model can yield better results.   
+| 1          | Logistic Regression     | C = 0.5                   | C = 0.1                      | 0.894                   | 0.893                      |
+| 2          | K-Nearest Neighbors     | k = 25                    | k = 25                       | 0.865                   | 0.880                      |
+| 3          | Support Vector Machine  | C = 0.1 (Linear)          | C = 0.1 (Linear)             | 0.895                   | 0.894                      |
+| 4          | Random Forest           | Estimators = 500          | Estimators = 250             | 0.881                   | 0.876                      |
+| 5          | Gradient Boosting       | Estimators = 100          | Estimators = 100             | 0.890                   | 0.887                      |
+| 6          | Neural Network          | Layers = [16, 32, 64]     |                              |                         | 0.895                      |
 
 ### Top 10 Features Importance (Random Forest)
 | Feature                             | Importance |
@@ -125,7 +127,10 @@ Overall, it seems that the classification task is not too complex, as smaller an
 | Scholarship holder                  | 0.0334     |
 | Curricular units 2nd sem (enrolled) | 0.0209     |
 | Gender                              | 0.0206     |
-
+   
+### Recommended Model
+The best-performing model was the Neural Network, achieving an F1 score of 0.895. This model demonstrated superior performance in predicting student's dropout.  
+   
 ## Conclusion
 This analysis provides a robust framework for predicting student dropout and academic performance using various data features. The findings offer valuable insights into the key factors associated with student success and dropout rates and demonstrate the potential of machine learning models in supporting educational decision-making.
 
