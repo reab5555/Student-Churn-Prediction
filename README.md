@@ -1,4 +1,4 @@
-[<img src="images/icon.jpeg" width="100" alt="alt text">
+<img src="images/icon.jpeg" width="100" alt="alt text">
 
 # Student Dropout and Academic Success Prediction
 
@@ -81,6 +81,12 @@ Selected As top 10 Features:
 - Curricular units 2nd sem (grade)
 - Course 12
 
+----------------------------------------------------------------------------
+
+<img src="images/pair_plot_1.png" width="350" alt="alt text">
+<img src="images/pair_plot_2.png" width="350" alt="alt text">
+
+----------------------------------------------------------------------------
 ## Model Training and Evaluation
 We used various machine learning models and conducted a grid search to find the best hyperparameters. Stratified cross-validation with 8 folds and downsampling for preprocessing were utilized to ensure balanced class distribution.
 
