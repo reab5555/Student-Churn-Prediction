@@ -86,7 +86,7 @@ Selected As top 10 Features:
   <img src="images/eda.png" width="1600" />
 </p>
 
-Here we can see for example the distribution of each of the top features. furthermore, we can see that Gender and Age at enrollment are negatively correlated with Graduation, while all other features except Course are positively correlated.  
+Here we can see for example the distribution of each of the top features. furthermore, we can see that Gender and Age at enrollment are negatively correlated with Graduation, while all other features are positively correlated.  
 
 ----------------------------------------------------------------------------
 
