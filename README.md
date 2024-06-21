@@ -84,8 +84,8 @@ Selected As top 10 Features:
 ----------------------------------------------------------------------------
 
 <p align="center">
-  <img src="images/pair_plot_1.png" width="400" />
-  <img src="images/pair_plot_2.png" width="400" />
+  <img src="images/pair_plot_1.png" width="500" />
+  <img src="images/pair_plot_2.png" width="500" />
 </p>
 
 
