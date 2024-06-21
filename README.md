@@ -83,8 +83,11 @@ Selected As top 10 Features:
 
 ----------------------------------------------------------------------------
 
-<img src="images/pair_plot_1.png" width="350" alt="alt text">
-<img src="images/pair_plot_2.png" width="350" alt="alt text">
+<p align="center">
+  <img src="images/pair_plot_1.png" width="400" />
+  <img src="images/pair_plot_2.png" width="400" />
+</p>
+
 
 ----------------------------------------------------------------------------
 ## Model Training and Evaluation
