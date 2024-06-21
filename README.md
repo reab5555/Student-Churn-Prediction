@@ -88,8 +88,8 @@ Selected As top 10 Features:
   <img src="images/pair_plot_2.png" width="450" />
 </p>
 
-
 ----------------------------------------------------------------------------
+
 ## Model Training and Evaluation
 We used various machine learning models and conducted a grid search to find the best hyperparameters. Stratified cross-validation with 8 folds and downsampling for preprocessing were utilized to ensure balanced class distribution.
 
@@ -104,7 +104,7 @@ We also experimented with simpler models such as Logistic Regression, K-Nearest 
 | Graduate (1) | 0.855     | 0.940  | 0.896    | 1421    |
 
 ### Best Configuration
-- **Layers**: 16, 32, 64, 128
+- **Layers**: [16, 32, 64, 128]
 - **Learning Rate**: 0.001
 - **Batch Size**: 64
 - **F1 Score**: 0.8960
@@ -130,7 +130,7 @@ We also experimented with simpler models such as Logistic Regression, K-Nearest 
 | 3          | Support Vector Machine  | C = 0.1 (Linear)          | C = 0.1 (Linear)             | 0.895                   | 0.894                      |
 | 4          | Random Forest           | Estimators = 500          | Estimators = 250             | 0.881                   | 0.876                      |
 | 5          | Gradient Boosting       | Estimators = 100          | Estimators = 100             | 0.890                   | 0.887                      |
-| 6          | Neural Network          | Layers = 16, 32, 64, 128  |                              |                         | 0.895                      |
+| 6          | Neural Network          | Layers = [16, 32, 64, 128]  |                              |                         | 0.895                      |
 
 ### Top 10 Features Importance (Random Forest)
 | Feature                             | Importance |
