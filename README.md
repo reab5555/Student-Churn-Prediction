@@ -81,10 +81,6 @@ Selected As top 10 Features:
 - Curricular units 2nd sem (grade)
 - Course_12
 
-We can also view this as a correlation matrix and see the top 5 features:   
-
-<img src="images/heatmap.png" width="400" alt="alt text">
-
 ## Model Training and Evaluation
 We used various machine learning models and conducted a grid search to find the best hyperparameters. Stratified cross-validation with 8 folds and downsampling for preprocessing were utilized to ensure balanced class distribution.
 
