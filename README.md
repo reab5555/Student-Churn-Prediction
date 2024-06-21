@@ -128,7 +128,7 @@ We also experimented with simpler models such as Logistic Regression, K-Nearest 
 | 3          | Support Vector Machine  | C = 0.1 (Linear)           | C = 0.1 (Linear)             | 0.895                   | 0.894                      |
 | 4          | Random Forest           | Estimators = 500           | Estimators = 250             | 0.881                   | 0.876                      |
 | 5          | Gradient Boosting       | Estimators = 100           | Estimators = 100             | 0.890                   | 0.887                      |
-| 6          | Neural Network          | Layers = [16, 32, 64, 128] |                              |                         | 0.895                     |
+| 6          | Neural Network          | Layers = [16, 32, 64, 128] |                              | 0.896                   | 0.895                      |
 
 ### Top 10 Features Importance (Random Forest)
 | Feature                             | Importance |
@@ -145,7 +145,7 @@ We also experimented with simpler models such as Logistic Regression, K-Nearest 
 | Gender                              | 0.0206     |
    
 ### Recommended Model
-The best-performing model was the Neural Network, achieving an F1 score of 0.895. This model demonstrated superior performance in predicting student's dropout.  
+The best-performing model was the Neural Network, achieving an F1 score of 0.896. This model demonstrated superior performance in predicting student's dropout.  
    
 ## Conclusion
 This analysis provides a robust framework for predicting student dropout and academic performance using various data features. The findings offer valuable insights into the key factors associated with student success and dropout rates and demonstrate the potential of machine learning models in supporting educational decision-making.
