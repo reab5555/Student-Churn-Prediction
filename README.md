@@ -91,14 +91,14 @@ We also experimented with simpler models such as Logistic Regression, K-Nearest 
 ### Neural Network (NN) (All Features)
 | Class        | Precision | Recall | F1-Score | Support |
 |--------------|-----------|--------|----------|---------|
-| Dropout (0)  | 0.923     | 0.853  | 0.887    | 1421    |
-| Graduate (1) | 0.863     | 0.928  | 0.895    | 1421    |
+| Dropout (0)  | 0.933     | 0.841  | 0.885    | 1421    |
+| Graduate (1) | 0.855     | 0.940  | 0.896    | 1421    |
 
 ### Best Configuration
-- **Layers**: [16, 32, 64]
+- **Layers**: 16, 32, 64, 128
 - **Learning Rate**: 0.001
-- **Batch Size**: 128
-- **F1 Score**: 0.8951
+- **Batch Size**: 64
+- **F1 Score**: 0.8960
 
 ----------------------------------------------------------------------------
 
@@ -118,7 +118,7 @@ We also experimented with simpler models such as Logistic Regression, K-Nearest 
 | 3          | Support Vector Machine  | C = 0.1 (Linear)          | C = 0.1 (Linear)             | 0.895                   | 0.894                      |
 | 4          | Random Forest           | Estimators = 500          | Estimators = 250             | 0.881                   | 0.876                      |
 | 5          | Gradient Boosting       | Estimators = 100          | Estimators = 100             | 0.890                   | 0.887                      |
-| 6          | Neural Network          | Layers = [16, 32, 64]     |                              |                         | 0.895                      |
+| 6          | Neural Network          | Layers = 16, 32, 64, 128  |                              |                         | 0.895                      |
 
 ### Top 10 Features Importance (Random Forest)
 | Feature                             | Importance |
