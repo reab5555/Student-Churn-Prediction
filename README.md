@@ -114,8 +114,8 @@ We also experimented with simpler models such as Logistic Regression, K-Nearest 
 <img src="images/learning_curve.png" width="600" alt="alt text">
 
 <p align="center">
-  <img src="images/confusion_matrix.png" width="500" />
-  <img src="images/roc.png" width="500" />
+  <img src="images/confusion_matrix.png" width="400" />
+  <img src="images/roc.png" width="400" />
 </p>
 
 ----------------------------------------------------------------------------
