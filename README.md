@@ -46,8 +46,6 @@ Using this dataset, researchers can investigate two key questions:
 - Which specific predictive factors are linked with student dropout or completion?
 - How do different features interact with each other?   
 
-For example, researchers could explore if there are any characteristics (gender, age at enrollment, etc.) that are associated with higher student success rates, as well as understand what implications poverty has for educational outcomes. By answering these questions, research insights are generated that can provide critical information for administrators on formulating strategies that promote successful degree completion among students from diverse backgrounds in their institutions.
-
 - **Prediction of Student Retention**: This dataset can be used to develop predictive models that can identify student risk factors for dropout and take early interventions to improve student retention rates.
 - **Improved Academic Performance**: By using this data, higher education institutions could better understand their students' academic progress and identify areas of improvement from both an individual and institutional perspective. This will enable them to develop targeted courses, activities, or initiatives that enhance academic performance more effectively and efficiently.
 
