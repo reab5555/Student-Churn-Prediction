@@ -80,13 +80,13 @@ Selected As top 10 Features:
 - Curricular units 2nd sem (approved)
 - Curricular units 2nd sem (grade)
 - Course 12
-
 ----------------------------------------------------------------------------
 
 <p align="center">
-  <img src="images/pair_plot_1.png" width="450" />
-  <img src="images/pair_plot_2.png" width="450" />
+  <img src="images/eda.png" width="1600" />
 </p>
+
+Here we can see for example the distribution of each of the top features. furthermore, we can see that Gender and Age at enrollment are negatively correlated with Graduation, while all other features except Course are positively correlated.  
 
 ----------------------------------------------------------------------------
 
@@ -123,14 +123,14 @@ We also experimented with simpler models such as Logistic Regression, K-Nearest 
 ----------------------------------------------------------------------------
 
 ### Comparison of F1 Scores
-| Complexity | Model                   | Parameters (All Features) | Parameters (Top 10 Features) | F1 Score (All Features) | F1 Score (Top 10 Features) |
-|------------|-------------------------|---------------------------|------------------------------|-------------------------|----------------------------|
-| 1          | Logistic Regression     | C = 0.5                   | C = 0.1                      | 0.894                   | 0.893                      |
-| 2          | K-Nearest Neighbors     | k = 25                    | k = 25                       | 0.865                   | 0.880                      |
-| 3          | Support Vector Machine  | C = 0.1 (Linear)          | C = 0.1 (Linear)             | 0.895                   | 0.894                      |
-| 4          | Random Forest           | Estimators = 500          | Estimators = 250             | 0.881                   | 0.876                      |
-| 5          | Gradient Boosting       | Estimators = 100          | Estimators = 100             | 0.890                   | 0.887                      |
-| 6          | Neural Network          | Layers = [16, 32, 64, 128]  |                              |                         | 0.895                      |
+| Complexity | Model                   | Parameters (All Features)  | Parameters (Top 10 Features) | F1 Score (All Features) | F1 Score (Top 10 Features) |
+|------------|-------------------------|----------------------------|------------------------------|-------------------------|----------------------------|
+| 1          | Logistic Regression     | C = 0.5                    | C = 0.1                      | 0.894                   | 0.893                      |
+| 2          | K-Nearest Neighbors     | k = 25                     | k = 25                       | 0.865                   | 0.880                      |
+| 3          | Support Vector Machine  | C = 0.1 (Linear)           | C = 0.1 (Linear)             | 0.895                   | 0.894                      |
+| 4          | Random Forest           | Estimators = 500           | Estimators = 250             | 0.881                   | 0.876                      |
+| 5          | Gradient Boosting       | Estimators = 100           | Estimators = 100             | 0.890                   | 0.887                      |
+| 6          | Neural Network          | Layers = [16, 32, 64, 128] |                              |                         | 0.895                     |
 
 ### Top 10 Features Importance (Random Forest)
 | Feature                             | Importance |
