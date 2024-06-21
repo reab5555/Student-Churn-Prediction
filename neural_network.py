@@ -47,7 +47,7 @@ class FlexibleAlzheimerNet(nn.Module):
         return self.model(x)
 
 # Function to train the model with early stopping
-def train_model(model, X_train, y_train, X_val, y_val, epochs=250, batch_size=128, patience=2, learning_rate=0.001,
+def train_model(model, X_train, y_train, X_val, y_val, epochs=250, batch_size=64, patience=2, learning_rate=0.001,
                 fold=1):
     criterion = nn.BCELoss()
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
@@ -266,6 +266,6 @@ y_tensor = torch.FloatTensor(y).to(device)
 train_losses, val_losses = train_model(final_model, X_tensor, y_tensor, X_tensor, y_tensor, learning_rate=best_lr)
 
 # Save the final model
-torch.save(final_model.state_dict(), 'alzheimer_prediction_model.pth')
-print("Final model saved as 'alzheimer_prediction_model.pth'")
+torch.save(final_model.state_dict(), 'students_dropout_prediction_model.pth')
+print("Final model saved as 'students_dropout_prediction_model.pth'")
 
