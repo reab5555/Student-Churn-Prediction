@@ -1,5 +1,4 @@
 <img src="images/icon.webp" width="100" alt="alt text">
-
 # Student Dropout and Academic Success Prediction
 
 This repository contains a dataset and a comprehensive analysis framework for predicting student dropout and academic performance using various machine learning and deep learning models.
