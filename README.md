@@ -55,16 +55,16 @@ For example, researchers could explore if there are any characteristics (gender,
 Initial data exploration involved checking for missing values, outliers, and inconsistencies. Feature engineering steps included scaling numerical features, one-hot encoding categorical features, and undersampling to address class imbalance.
 
 Class distribution before resampling:
-| Target  | Samples |
-|---------|---------|
-| Graduate| 2209    |
-| Dropout | 1421    |
+| Target       | Samples |
+|--------------|---------|
+| Graduate (1) | 2209    |
+| Dropout (0)  | 1421    |
 
 Class distribution after resampling:
-| Target  | Samples |
-|---------|---------|
-| Graduate| 1421    |
-| Dropout | 1421    |
+| Target       | Samples |
+|--------------|---------|
+| Graduate (1) | 1421    |
+| Dropout (0)  | 1421    |
 
 ## Features Selection
 The SelectKBest method from the sklearn.feature_selection module is a feature selection technique that selects the top k features based on a statistical measure of their relevance to the target variable.
