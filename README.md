@@ -103,6 +103,7 @@ We also experimented with simpler models such as Logistic Regression, K-Nearest 
 
 ### Best Configuration
 - **Layers**: [16, 32, 64, 128]
+- **Output**: Sigmoid
 - **Learning Rate**: 0.001
 - **Batch Size**: 64
 - **F1 Score**: 0.8960
