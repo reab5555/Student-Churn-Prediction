@@ -79,8 +79,8 @@ We also experimented with simpler models such as Logistic Regression, K-Nearest 
 ### Classification Report - Neural Network (NN) (Top 10 Features)
 | Class        | Precision | Recall | F1-Score | Support |
 |--------------|-----------|--------|----------|---------|
-| Graduate     | 0.929     | 0.843  | 0.884    | 1421    |
-| Dropout      | 0.856     | 0.935  | 0.894    | 1421    |
+| Dropout      | 0.929     | 0.843  | 0.884    | 1421    |
+| Graduate     | 0.856     | 0.935  | 0.894    | 1421    |
 | accuracy     |           |        | 0.889    | 2842    |
 | macro avg    |           |        | 0.892    | 2842    |
 | weighted avg |           |        | 0.892    | 2842    |
