@@ -95,7 +95,7 @@ We also experimented with simpler models such as Logistic Regression, K-Nearest 
 
 ## Key Findings and Insights
 
-### Neural Network (NN) (All Features)
+### Neural Network (Using All Features)
 | Class        | Precision | Recall | F1-Score | Support |
 |--------------|-----------|--------|----------|---------|
 | Dropout (0)  | 0.933     | 0.841  | 0.885    | 1421    |
