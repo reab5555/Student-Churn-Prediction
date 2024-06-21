@@ -91,8 +91,8 @@ We also experimented with simpler models such as Logistic Regression, K-Nearest 
 ### Neural Network (NN) (All Features)
 | Class        | Precision | Recall | F1-Score | Support |
 |--------------|-----------|--------|----------|---------|
-| Dropout      | 0.923     | 0.853  | 0.887    | 1421    |
-| Graduate     | 0.863     | 0.928  | 0.895    | 1421    |
+| Dropout (0)  | 0.923     | 0.853  | 0.887    | 1421    |
+| Graduate (1) | 0.863     | 0.928  | 0.895    | 1421    |
 
 ### Best Configuration
 - **Layers**: [16, 32, 64]
