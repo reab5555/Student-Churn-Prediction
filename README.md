@@ -69,6 +69,18 @@ Class distribution after resampling:
 ## Features Selection
 The SelectKBest method from the sklearn.feature_selection module is a feature selection technique that selects the top k features based on a statistical measure of their relevance to the target variable.
 
+Selected As top 10 Features: 
+- Gender
+- Scholarship holder'
+- Age at enrollment'
+- Curricular units 1st sem (enrolled)
+- Curricular units 1st sem (approved)
+- Curricular units 1st sem (grade)
+- Curricular units 2nd sem (enrolled)
+- Curricular units 2nd sem (approved)
+- Curricular units 2nd sem (grade)
+- Course_12
+       
 ## Model Training and Evaluation
 We used various machine learning models and conducted a grid search to find the best hyperparameters. Stratified cross-validation with 8 folds and downsampling for preprocessing were utilized to ensure balanced class distribution.
 
@@ -76,18 +88,16 @@ We also experimented with simpler models such as Logistic Regression, K-Nearest 
 
 ## Key Findings and Insights
 
-### Classification Report - Neural Network (NN) (Top 10 Features)
+### Neural Network (NN) (All Features)
 | Class        | Precision | Recall | F1-Score | Support |
 |--------------|-----------|--------|----------|---------|
 | Dropout      | 0.929     | 0.843  | 0.884    | 1421    |
 | Graduate     | 0.856     | 0.935  | 0.894    | 1421    |
-| accuracy     |           |        | 0.889    | 2842    |
-| macro avg    |           |        | 0.892    | 2842    |
-| weighted avg |           |        | 0.892    | 2842    |
 
 ### Best Configuration
 - **Layers**: [8, 8, 8]
 - **Learning Rate**: 0.01
+- **Batch Size**: 128
 - **F1 Score**: 0.8942
 
 ### Comparison of F1 Scores
@@ -98,8 +108,9 @@ We also experimented with simpler models such as Logistic Regression, K-Nearest 
 | 3          | Support Vector Machine  | C = 0.1 (Linear)          | C = 0.1 (Linear)             | 0.8959                  | 0.8943                     |
 | 4          | Random Forest           | Estimators = 500          | Estimators = 250             | 0.8819                  | 0.8768                     |
 | 5          | Gradient Boosting       | Estimators = 100          | Estimators = 100             | 0.8906                  | 0.8872                     |
-| 6          | Neural Network          |                           | Layers = [8, 8, 8]           |                         | 0.8942                     |
+| 6          | Neural Network          | Layers = [8, 8, 8]        |                              |                         | 0.8942                     |
 
+Overall, it seems that the classification task is not too complex, as smaller and less complex model can yield better results.   
 
 ### Top 10 Features Importance (Random Forest)
 | Feature                             | Importance |
@@ -132,7 +143,7 @@ Future analysis could involve:
 - `feature_importance.py`: Trains a Random Forest model and prints the feature importance.
 - `layer_configurations.py`: Generates layer configurations and learning rates for the neural network.
 - `neural_network.py`: Trains and evaluates a flexible neural network model using the best configurations.
-- `main.py`: Main script to run all the above scripts in the correct order.
+- `student_churn_main.py`: Main script to run all the above scripts in the correct order.
 
 ### How to Run
 
@@ -151,18 +162,8 @@ Future analysis could involve:
 
 4. Run the main script:
     ```bash
-    python main.py
+    python student_churn_main.py
     ```
-
-### Description of Scripts
-
-- **data_preprocessing.py**: This script loads the data from a CSV file, separates features and target, scales numerical features, and resamples the data to address class imbalance.
-- **feature_selection.py**: This script uses `SelectKBest` to select the top 10 features based on their importance and resamples the selected features.
-- **simple_model_evaluation.py**: This script evaluates several simple models (Logistic Regression, KNN, SVM, Random Forest, Gradient Boosting) using both all features and the top 10 features, performing cross-validation and saving the best F1 scores.
-- **feature_importance.py**: This script trains a Random Forest model using the full dataset, prints the feature importance, and checks whether the top 10 features are used.
-- **layer_configurations.py**: This script generates different layer configurations and learning rates for the neural network, saving them to a JSON file.
-- **neural_network.py**: This script trains a flexible neural network model using the configurations from `layer_configurations.py`, performs grid search with cross-validation to find the best configuration, plots learning curves, confusion matrix, and ROC curve, and saves the final trained model.
-- **main.py**: This script sequentially runs all the above scripts in the correct order.
 
 ### License
 
