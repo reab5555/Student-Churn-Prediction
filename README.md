@@ -91,13 +91,15 @@ We also experimented with simpler models such as Logistic Regression, K-Nearest 
 - **F1 Score**: 0.8942
 
 ### Comparison of F1 Scores
-| Model               | All Features | Top 10 Features |
-|---------------------|--------------|-----------------|
-| Logistic Regression | 0.8943       | 0.8930          |
-| KNN                 | 0.8650       | 0.8804          |
-| SVM                 | 0.8959       | 0.8943          |
-| Random Forest       | 0.8819       | 0.8768          |
-| Gradient Boosting   | 0.8906       | 0.8872          |
+| Complexity | Model                   | Parameters (All Features) | Parameters (Top 10 Features) | F1 Score (All Features) | F1 Score (Top 10 Features) |
+|------------|-------------------------|---------------------------|------------------------------|-------------------------|----------------------------|
+| 1          | Logistic Regression     | C = 0.5                   | C = 0.1                      | 0.8943                  | 0.8930                     |
+| 2          | K-Nearest Neighbors     | k = 25                    | k = 25                       | 0.8650                  | 0.8804                     |
+| 3          | Support Vector Machine  | C = 0.1 (Linear)          | C = 0.1 (Linear)             | 0.8959                  | 0.8943                     |
+| 4          | Random Forest           | Estimators = 500          | Estimators = 250             | 0.8819                  | 0.8768                     |
+| 5          | Gradient Boosting       | Estimators = 100          | Estimators = 100             | 0.8906                  | 0.8872                     |
+| 6          | Neural Network          |                           | Layers = [8, 8, 8]           |                         | 0.8942                     |
+
 
 ### Top 10 Features Importance (Random Forest)
 | Feature                             | Importance |
