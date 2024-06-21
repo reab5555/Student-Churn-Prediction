@@ -79,7 +79,7 @@ Selected As top 10 Features:
 - Curricular units 2nd sem (enrolled)
 - Curricular units 2nd sem (approved)
 - Curricular units 2nd sem (grade)
-- Course_12
+- Course 12
 
 ## Model Training and Evaluation
 We used various machine learning models and conducted a grid search to find the best hyperparameters. Stratified cross-validation with 8 folds and downsampling for preprocessing were utilized to ensure balanced class distribution.
