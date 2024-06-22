@@ -110,11 +110,13 @@ We also experimented with simpler models such as Logistic Regression, K-Nearest 
 
 ----------------------------------------------------------------------------
 
-<p align="center">
+### Evaluation Visualization
+
+<p align="left">
   <img src="images/learning_curve.png" width="600" />
 </p>
 
-<p align="center">
+<p align="left">
   <img src="images/confusion_matrix.png" width="400" />
   <img src="images/roc.png" width="400" />
 </p>
