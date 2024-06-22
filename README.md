@@ -5,7 +5,7 @@
 This repository contains a dataset and a comprehensive analysis framework for predicting student dropout and academic performance using various machine learning and deep learning models.
 
 ## Main Objective
-The primary objective of this analysis is to explore the factors associated with student dropout, develop predictive models, and conduct statistical analyses to provide insights and predictive capabilities. The focus will be on improving prediction accuracy and providing valuable information to stakeholders, such as educational institutions and policymakers.
+The primary objective of this analysis is to explore the factors associated with student dropout, develop predictive models, and conduct statistical analysis to provide insights and predictive capabilities. The focus will be on improving prediction accuracy and providing valuable information to stakeholders, such as educational institutions and policymakers.
 
 ## Data Summary
 The dataset includes socio-economic factors and academic performance. The data covers a wide range of features essential for understanding and predicting student dropout and academic success.
